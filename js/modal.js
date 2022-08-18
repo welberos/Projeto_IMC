@@ -2,7 +2,7 @@
 //const modalMessage = document.querySelector('.modal .title span')
 //const modalBtnClose = document.querySelector('.modal button.close')
 
-export const Modal= {
+const Modal= {
   wrapper: document.querySelector('.modal-wrapper'),
   message: document.querySelector('.modal .title span'),
   buttonClose: document.querySelector('.modal button.close'),
@@ -27,3 +27,4 @@ function handleKeydown (event ){
     Modal.close()
   }
 }
+module.exports = Modal
