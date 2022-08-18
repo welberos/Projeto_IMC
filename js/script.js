@@ -1,6 +1,6 @@
-import { Modal } from './modal.js'
-import {AlertError} from "./alert-error.js"
-import {notANumber, calculateIMC} from './utils.js'
+module.import { Modal } from './modal.js'
+module.import {AlertError} from "./alert-error.js"
+module.import {notANumber, calculateIMC} from './utils.js'
 
 //Variáveis - variebles
 
