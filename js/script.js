@@ -1,12 +1,7 @@
 import { Modal } from './modal.js'
 import {AlertError} from "./alert-error.js"
 import {calculateIMC, notANumber} from './utils.js'
-
-//Variáveis - variebles
-
-const form = document.querySelector('form')
-const inputWeight = document.querySelector('#weight')
-const inputHeight = document.querySelector('#height')
+import { form, inputWeight, inputHeight } from './elements.js'
 
 form.onsubmit = event => {
   event.preventDefault()
