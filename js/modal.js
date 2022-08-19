@@ -1,29 +1,19 @@
-//const modalWrapper = document.querySelector('.modal-wrapper')
-//const modalMessage = document.querySelector('.modal .title span')
-//const modalBtnClose = document.querySelector('.modal button.close')
-
-export const Modal= {
+export const Modal = {
   wrapper: document.querySelector('.modal-wrapper'),
-  message: document.querySelector('.modal .title span'),
+  message: document.querySelector('.modal h2'),
   buttonClose: document.querySelector('.modal button.close'),
-  
-  open() {
-    Modal.wrapper.classList.add('open')
-  },
-  close() {
-    Modal.wrapper.classList.remove('open')
-  } 
+  open() { Modal.wrapper.classList.add('open') },
+  close() { Modal.wrapper.classList.remove('open') }
 }
 
-Modal.buttonClose.onclick = function() {
-//modalWrapper.classList.remove('open')
-  Modal.close()
+Modal.buttonClose.onclick = () => {
+  Modal.close();
 }
 
-window.addEventListener('keydown', handleKeydown)
-function handleKeydown (event ){
+window.addEventListener('keydown', handleKeyDown);
+function handleKeyDown(event) {
   if (event.key === 'Escape') {
-    Modal.close()
-  }
+    Modal.close();
+    document.body.querySelectorAll('input').forEach(element => element.value = '')
+  };
 }
-
